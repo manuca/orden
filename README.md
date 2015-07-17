@@ -1,7 +1,7 @@
 # Orden
 
-A simple library (~ 40 LOC) to generate sorting links on query strings via
-query string of the type: `http://www.example.com/?sort_attr=id&sort_dir=asc`.
+A simple library (~ 40 LOC) to generate sorting links via
+query strings for example: `http://www.example.com/?sort_attr=id&sort_dir=asc`.
 
 The only dependency of this library is *Rack* so it should work in your Rack
 compatible framework of choice (Cuba, Rails, Roda, Sinatra, etc).
@@ -27,8 +27,8 @@ Or install it yourself as:
 ## Usage
 
 You need to instantiate an `Orden` object in the context of the current
-request, for this you need to pass a Rack::Request or similiar (Roda request
-object).
+request, for this you need to pass a Rack::Request or similiar (Roda typical '`r`'
+object, `request` object inside a Rails controller, etc).
 
 ```ruby
 Orden.new([request_object], [default sort attr], [default order (asc/desc)])
