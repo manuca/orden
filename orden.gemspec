@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Manuel Barros Reyes"]
   spec.email         = ["manuca@gmail.com"]
 
-  spec.summary       = %q{A tiny helper to sort columns in Rack apps}
-  spec.description   = %q{It relies only on Rack to parse and rewrite query strings}
+  spec.description   = %q{A tiny helper to sort columns in Rack apps}
+  spec.summary       = %q{It relies exclusively on Rack to parse and rewrite query strings so no extra dependencies are required}
   spec.homepage      = "https://github.com/manuca/orden"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
